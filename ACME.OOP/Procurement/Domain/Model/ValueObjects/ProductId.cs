@@ -10,8 +10,8 @@ public record ProductId
     /// <summary>
     /// Creates a new instance of the <see cref="ProductId"/>  .
     /// </summary>
-    /// <param name="id">The </param>
-    /// <exception cref="ArgumentException"></exception>
+    /// <param name="id">The unique identifier for the product</param>
+    /// <exception cref="ArgumentException">Thrown when the id is empty</exception>
 
     public ProductId(Guid id)
     {
@@ -27,6 +27,6 @@ public record ProductId
     /// <summary>
     /// to string override to return the string representation of the ProductId.
     /// </summary>
-    /// <returns> </returns>
+    /// <returns>The string representation of the ProductId.</returns>
     public override string ToString() => Id.ToString();
 }
