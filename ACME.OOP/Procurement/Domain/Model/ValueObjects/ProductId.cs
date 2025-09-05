@@ -25,7 +25,7 @@ public record ProductId
     /// <returns>A new instance </returns>
     public static ProductId New() => new (Guid.NewGuid());
     /// <summary>
-    /// 
+    /// to string override to return the string representation of the ProductId.
     /// </summary>
     /// <returns></returns>
     public override string ToString() => Id.ToString();
