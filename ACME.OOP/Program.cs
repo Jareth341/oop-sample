@@ -20,4 +20,4 @@ var purchaseOrder = new PurchaseOrder("PO456", new SupplierId(supplier.Identifie
 purchaseOrder.AddItem(ProductId.New(),10, 15.50m);
 purchaseOrder.AddItem(ProductId.New(),5, 25.00m);
 
-Console.WriteLine($"order total: {purchaseOrder.CalculateOrderTotal()}");
+Console.WriteLine($"Order Total: {purchaseOrder.CalculateOrderTotal()}");
