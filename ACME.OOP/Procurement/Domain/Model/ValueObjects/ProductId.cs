@@ -27,6 +27,6 @@ public record ProductId
     /// <summary>
     /// to string override to return the string representation of the ProductId.
     /// </summary>
-    /// <returns></returns>
+    /// <returns> </returns>
     public override string ToString() => Id.ToString();
 }
